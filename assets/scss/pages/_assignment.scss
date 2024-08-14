@@ -1,0 +1,19 @@
+
+.question-list{
+    width: 296px;
+}
+.response-content{
+    margin-left: 56px;
+    .btn{
+        border-radius: 2px;
+    }
+}
+.response-btn{
+    .px-4{
+        padding-left: ($spacer * 2) !important;
+        padding-right: ($spacer * 2) !important;
+    }
+}
+.fill-window{
+    height: 319px;
+}
