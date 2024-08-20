@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <title>index</title>
-    <script type="module" crossorigin src="/main-task-week5/assets/main-ee38e8fd.js"></script>
-    <link rel="stylesheet" href="/main-task-week5/assets/main-758471f1.css">
+    <script type="module" crossorigin src="/main-task-week5/assets/main-0bdbfe61.js"></script>
+    <link rel="stylesheet" href="/main-task-week5/assets/main-38fe1ec8.css">
   </head>
   <body>
     <div class="d-flex vh-100">
@@ -61,7 +61,213 @@
         </div>
       </div>
     </div>
-  </aside>          <div class="px-4  h-100 flex-column container-fluid  bg-body-tertiary ">
+  </aside>      <div class="modal fade " id="addnewadmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-0">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title fw-bold" id="staticBackdropLabel">New Admin</h4>
+          <button type="button" class="btn-close fs-5 " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5 class="fw-bold">Account</h5>
+            <div class="py-4 border-bottom">
+              <form>
+                <div class="mb-3">
+                  <label for="InputName" class="form-label labelName fs-7">Name</label>
+                  <input type="text" class="form-control rounded-9" id="InputName" aria-describedby="emailHelp">
+                </div>
+                <div>
+                  <label for="exampleInputEmail" class="form-label labelEmail fs-7">Email</label>
+                  <input type="email" class="form-control rounded-9" id="exampleInputEmail">
+                </div>
+              </form>
+            </div>
+            <div class="border-bottom py-4">
+              <h5 class="mb-7 fw-bold">Verification</h5>
+              <h6 class="mb-3 fw-bold"><i class="bi bi-exclamation-triangle-fill text-danger me-8"></i>Unverified</h6>
+              <div class="d-grid">
+                <button class="btn btn-outline-success border-secondary" type="button">Send Verification Mail</button>
+              </div>
+            </div>
+            <div class="border-bottom py-4">
+              <label for="anminselect" class="form-label h5 fw-bold mb-3">Access Level</label>
+              <select class="form-select form-select-sm text-secondary
+             " id="anminselect" aria-label="Small select example">
+                <option selected>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="py-4" >
+              <h5 class="mb-3 fw-bold">Custom Access</h5>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-outline-success px-6" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success px-6">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>      <div class="modal fade " id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-9">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title fw-bold" id="staticBackdropLabel">Edit Admin</h4>
+          <button type="button" class="btn-close fs-5 " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5 class="fw-bold">Account</h5>
+            <div class="py-4 border-bottom">
+              <form>
+                <div class="mb-3">
+                  <label for="InputName" class="form-label labelName fs-7">Name</label>
+                  <input type="text" class="form-control rounded-9" id="InputName" aria-describedby="emailHelp" placeholder="Emir Wicks">
+                </div>
+                <div>
+                  <label for="exampleInputEmail" class="form-label labelEmail fs-7">Email</label>
+                  <input type="email" class="form-control rounded-9" id="exampleInputEmail" placeholder="emir.wicks@mail.com">
+                </div>
+              </form>
+            </div>
+            <div class="border-bottom py-4">
+              <h5 class="mb-7 fw-bold">Verification</h5>
+              <h6 class="mb-3 fw-bold"><span class="align-bottom"><img class="text-success" src="/main-task-week5/assets/check_circle_20dp_198754_FILL1_wght400_GRAD0_opsz20-01216650.svg" alt=""></span>Unverified</h6>
+              <div class="d-grid">
+                <button class="btn btn-outline-secondary text-success disabled" type="button">Send Verification Mail</button>
+              </div>
+            </div>
+            <div class="border-bottom py-4">
+              <label for="anminselect" class="form-label h5 fw-bold">Access Level</label>
+              
+              <select class="form-select form-select-sm text-secondary
+             " id="anminselect" aria-label="Small select example">
+                <option selected>Admin</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="py-4 border-bottom">
+              <h5 class=" mb-3 fw-bold">Custom Access</h5>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+            <div class="py-4">
+              <h5 class="mb-3">Deactivate Account</h5>
+              <h6 class="mb-3 fw-bold text-danger"><i class="bi bi-exclamation-triangle-fill text-danger me-8"></i>This cannot be undone!</h6>
+              <div class="d-grid">
+                <button class="btn btn-outline-danger " type="button">Deactivate This Account</button>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success px-6" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success px-6">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>      <div class="modal fade" id="viewexpand" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-9">
+        <div class="modal-body">
+          <div class="d-flex">
+            <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
+            <div class=" w-100">
+              <div class=" d-flex justify-content-between">
+                <p>#1</p> 
+                <div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+              <p>Admin</p>
+              <h3>Emir Wicks</h3>
+              <small>
+                <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
+              </small>
+              <div class="d-flex justify-content-between">
+                <p>Verified</p>
+                  <p class="d-inline-flex gap-1">
+                    <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <span class="material-symbols-outlined align-middle">
+                        keyboard_arrow_down
+                        </span>
+                    </a>
+                  </p>
+              </div> 
+              <div>
+                <div class="collapse" id="collapseExample">
+                  <div class=" d-flex justify-content-end pt-6 pb-3">
+                      <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
+                      <button type="button" class="btn btn-success px-6">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          <div class="px-4  h-100 flex-column container-fluid  bg-body-tertiary ">
             <div>
               <section class="d-flex align-items-center justify-content-between">
                 <nav class="navbar navbar-expand py-3">
@@ -72,17 +278,13 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                       <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                          <a class="btn border-0 text-nowrap" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item ">
+                          <!--Add-modal Button trigger modal -->
+                          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#addnewadmin">
                             <span class="ms-2 text-success material-symbols-outlined align-bottom">
                               add
                               </span>Add New Admin
-                          </a>
-                          <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                            </a>
                         </li>
                       </ul>
                     </div>
@@ -107,6 +309,7 @@
                       <th scope="col">Name</th>
                       <th scope="col">Email</th>
                       <th scope="col">Handle</th>
+                      <th scope="col"></th>
                     </tr>
                   </thead>
                   <tbody class="table-group-divider">
@@ -117,67 +320,20 @@
                       <td>Yes</td>
                       <td>
                       
+                      <!-- view-expand trigger modal -->
     
-                      <!-- Button trigger modal -->
-    
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-    
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
-                      </td>
+                      <!-- edit trigger modal -->
+
+                     <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                      <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
+
+                    </td>
                     </tr>
                     <tr class="">
                       <th scope="row">#2</th>
@@ -186,66 +342,17 @@
                       <td>Yes</td>
                       <td>
                       
+                       <!-- view-expand trigger modal -->
     
-                      <!-- Button trigger modal -->
-    
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                      
-    
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -258,63 +365,15 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-    
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                    
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -327,63 +386,14 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-    
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -393,66 +403,17 @@
                       <td>Yes</td>
                       <td>
                       
-    
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
     
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -462,66 +423,17 @@
                       <td>Yes</td>
                       <td>
                       
-    
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-    
-    
-    
-    
-    
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -534,63 +446,20 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                      
     
     
     
     
     
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -603,58 +472,17 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
-                      </td>
+
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
+
+                    </td>
                     </tr>
                     <tr class="">
                       <th scope="row">#9</th>
@@ -666,63 +494,20 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                      
     
     
     
     
     
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                     <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                      <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                     <tr class="">
@@ -735,63 +520,20 @@
     
                       <!-- Button trigger modal -->
     
-                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a type="button" class="" data-bs-toggle="modal" data-bs-target="#viewexpand">
                         <span class="me-4 align-top material-symbols-outlined">
                           visibility
                         </span>
                       </a>
     
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div class="d-flex">
-                                <img class="object-fit-cover me-4" style="width: 141px;height: 141px;" src="/main-task-week5/assets/emir-3d7a4b39.jpeg" alt="emir">
-                                <div class=" w-100">
-                                  <div class=" d-flex justify-content-between">
-                                    <p>#1</p> 
-                                    <div>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                  </div>
-                                  <p>Admin</p>
-                                  <h3>Emir Wicks</h3>
-                                  <small>
-                                    <a class="text-secondary" href="mailto:emir.wicks@mail.com" >emir.wicks@mail.com</a>
-                                  </small>
-                                  <div class="d-flex justify-content-between">
-                                    <p>Verified</p>
-                                      <p class="d-inline-flex gap-1">
-                                        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                          <span class="material-symbols-outlined align-middle">
-                                            keyboard_arrow_down
-                                            </span>
-                                        </a>
-                                      </p>
-                                  </div> 
-                                  <div>
-                                    <div class="collapse" id="collapseExample">
-                                      <div class=" d-flex justify-content-end pt-6 pb-3">
-                                          <button type="button" class="btn btn-outline-danger px-6 py-1 me-6">Deactivate</button>
-                                          <button type="button" class="btn btn-success px-6">Edit</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                      
     
     
     
     
     
-                     <a href="#"><span class="me-4 align-top material-symbols-outlined " data-bs-toggle="Modal" data-bs-target="exampleModalCenteredScrollable"> edit
-                          </span></a>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#editmodal">
+                        <span class="me-4 align-top material-symbols-outlined ">edit</span></a>
                       </td>
                     </tr>
                   </tbody>
