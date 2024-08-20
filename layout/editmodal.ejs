@@ -1,0 +1,87 @@
+<div class="modal fade " id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-9">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title fw-bold" id="staticBackdropLabel">Edit Admin</h4>
+          <button type="button" class="btn-close fs-5 " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5 class="fw-bold">Account</h5>
+            <div class="py-4 border-bottom">
+              <form>
+                <div class="mb-3">
+                  <label for="InputName" class="form-label labelName fs-7">Name</label>
+                  <input type="text" class="form-control rounded-9" id="InputName" aria-describedby="emailHelp" placeholder="Emir Wicks">
+                </div>
+                <div>
+                  <label for="exampleInputEmail" class="form-label labelEmail fs-7">Email</label>
+                  <input type="email" class="form-control rounded-9" id="exampleInputEmail" placeholder="emir.wicks@mail.com">
+                </div>
+              </form>
+            </div>
+            <div class="border-bottom py-4">
+              <h5 class="mb-7 fw-bold">Verification</h5>
+              <h6 class="mb-3 fw-bold"><span class="align-bottom"><img class="text-success" src="../assets/images/check_circle_20dp_198754_FILL1_wght400_GRAD0_opsz20.svg" alt=""></span>Unverified</h6>
+              <div class="d-grid">
+                <button class="btn btn-outline-secondary text-success disabled" type="button">Send Verification Mail</button>
+              </div>
+            </div>
+            <div class="border-bottom py-4">
+              <label for="anminselect" class="form-label h5 fw-bold">Access Level</label>
+              
+              <select class="form-select form-select-sm text-secondary
+             " id="anminselect" aria-label="Small select example">
+                <option selected>Admin</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="py-4 border-bottom">
+              <h5 class=" mb-3 fw-bold">Custom Access</h5>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+            <div class="py-4">
+              <h5 class="mb-3">Deactivate Account</h5>
+              <h6 class="mb-3 fw-bold text-danger"><i class="bi bi-exclamation-triangle-fill text-danger me-8"></i>This cannot be undone!</h6>
+              <div class="d-grid">
+                <button class="btn btn-outline-danger " type="button">Deactivate This Account</button>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success px-6" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success px-6">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
