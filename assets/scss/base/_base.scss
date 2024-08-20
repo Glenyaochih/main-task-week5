@@ -6,6 +6,11 @@ a{
     text-decoration: none;
     color: inherit;
     display: inline-block;
+    transition: 0.5;
+}
+a :hover{
+    color:#198754 ;
+    
 }
 code{
     font-family: "Roboto Mono", monospace;
